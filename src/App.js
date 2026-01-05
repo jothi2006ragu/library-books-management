@@ -1,7 +1,7 @@
+import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
-import Sidebar from "./components/sidebar";
-import Dashboard from "./Pages/DashBoard";        
+import Sidebar from "./components/Sidebar";
+import Dashboard from "./Pages/DashBoard";
 import Books from "./Pages/Books";
 import AddBook from "./Pages/AddBook";
 import Settings from "./Pages/Settings";
@@ -11,7 +11,6 @@ function App() {
     <Router>
       <div style={{ display: "flex" }}>
         <Sidebar />
-
         <div style={{ padding: "20px", width: "100%" }}>
           <Routes>
             <Route path="/" element={<Dashboard />} />
